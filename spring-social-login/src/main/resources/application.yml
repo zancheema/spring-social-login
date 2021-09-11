@@ -20,3 +20,6 @@ spring:
             scope:
               - email
               - profile
+
+app:
+  secretKey: 034uouoeifjadsofj49i384ui[tqitgj8e99f3q[90tj3p49gj9qe]]

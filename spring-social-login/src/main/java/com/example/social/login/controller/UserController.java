@@ -18,6 +18,7 @@ public class UserController {
 
     @GetMapping("me")
     public User getCurrentUser(@AuthenticationPrincipal OAuth2User oAuth2User) {
-        return userService.getUserById(oAuth2User.getName());
+        User user = userService.getUserById(oAuth2User.getName());
+        return user;
     }
 }
